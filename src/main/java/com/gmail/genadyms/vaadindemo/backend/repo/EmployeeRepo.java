@@ -1,6 +1,6 @@
-package com.gmail.genadyms.vaadindemo.repo;
+package com.gmail.genadyms.vaadindemo.backend.repo;
 
-import com.gmail.genadyms.vaadindemo.entity.Employee;
+import com.gmail.genadyms.vaadindemo.backend.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

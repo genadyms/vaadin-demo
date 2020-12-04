@@ -1,8 +1,8 @@
-package com.gmail.genadyms.vaadindemo.view;
+package com.gmail.genadyms.vaadindemo.ui.view;
 
-import com.gmail.genadyms.vaadindemo.component.EmployeeEditor;
-import com.gmail.genadyms.vaadindemo.entity.Employee;
-import com.gmail.genadyms.vaadindemo.repo.EmployeeRepo;
+import com.gmail.genadyms.vaadindemo.backend.component.EmployeeEditor;
+import com.gmail.genadyms.vaadindemo.backend.entity.Employee;
+import com.gmail.genadyms.vaadindemo.backend.repo.EmployeeRepo;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;

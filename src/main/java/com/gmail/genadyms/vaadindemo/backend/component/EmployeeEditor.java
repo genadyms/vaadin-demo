@@ -1,7 +1,7 @@
-package com.gmail.genadyms.vaadindemo.component;
+package com.gmail.genadyms.vaadindemo.backend.component;
 
-import com.gmail.genadyms.vaadindemo.entity.Employee;
-import com.gmail.genadyms.vaadindemo.repo.EmployeeRepo;
+import com.gmail.genadyms.vaadindemo.backend.entity.Employee;
+import com.gmail.genadyms.vaadindemo.backend.repo.EmployeeRepo;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.KeyNotifier;
 import com.vaadin.flow.component.button.Button;

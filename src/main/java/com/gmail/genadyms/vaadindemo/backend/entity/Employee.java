@@ -1,4 +1,4 @@
-package com.gmail.genadyms.vaadindemo.entity;
+package com.gmail.genadyms.vaadindemo.backend.entity;
 
 import lombok.Data;
 
