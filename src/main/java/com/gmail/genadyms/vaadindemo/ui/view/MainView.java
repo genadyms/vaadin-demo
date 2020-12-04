@@ -1,5 +1,6 @@
 package com.gmail.genadyms.vaadindemo.ui.view;
 
+import com.gmail.genadyms.vaadindemo.backend.entity.Company;
 import com.gmail.genadyms.vaadindemo.backend.entity.Contact;
 import com.gmail.genadyms.vaadindemo.backend.service.ContactService;
 import com.vaadin.flow.component.grid.Grid;
@@ -26,6 +27,11 @@ public class MainView extends VerticalLayout {
         grid.addClassName("contact-grid");
         grid.setSizeFull();
         grid.setColumns("firstName", "lastName", "email", "status");
+        grid.addColumn(contact -> {
+            Company company = contact.getCompany();
+            return company == null ? "-" : company.getName();
+        }).setHeader("Company");
+        grid.getColumns().forEach(col -> col.setAutoWidth(true));
     }
 
     private void updateList() {
