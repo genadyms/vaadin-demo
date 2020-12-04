@@ -4,6 +4,7 @@ import com.gmail.genadyms.vaadindemo.backend.entity.Company;
 import com.gmail.genadyms.vaadindemo.backend.entity.Contact;
 import com.gmail.genadyms.vaadindemo.backend.service.ContactService;
 import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
@@ -15,6 +16,7 @@ public class MainView extends VerticalLayout {
 
     private Grid<Contact> grid = new Grid<>(Contact.class);
     private TextField filterText = new TextField();
+    private ContactForm form;
 
     public MainView(ContactService contactService) {
         this.contactService = contactService;
@@ -22,9 +24,14 @@ public class MainView extends VerticalLayout {
         setSizeFull();
         configureFilter();
         configureGrid();
-        add(filterText);
-        add(grid);
 
+        form = new ContactForm();
+
+        Div content = new Div(grid, form);
+        content.addClassName("content");
+        content.add(filterText, form);
+
+        add(filterText, content);
         updateList();
     }
 
