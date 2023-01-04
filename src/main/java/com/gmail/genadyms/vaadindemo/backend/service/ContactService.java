@@ -5,7 +5,6 @@ import com.gmail.genadyms.vaadindemo.backend.entity.Contact;
 import com.gmail.genadyms.vaadindemo.backend.repo.CompanyRepository;
 import com.gmail.genadyms.vaadindemo.backend.repo.ContactRepository;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Random;
